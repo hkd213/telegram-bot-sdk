@@ -70,7 +70,7 @@ class TelegramClient
      */
     public function getBaseBotUrl()
     {
-        return static::BASE_BOT_URL;
+        return env('URL_TELEGRAM', static::BASE_BOT_URL);
     }
 
     /**
